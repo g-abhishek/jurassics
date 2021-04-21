@@ -39,6 +39,8 @@
     <link rel="preload" href="wp-content/themes/10princearthur/assets/css/app-46ab275e9482dc9f40a6.css" as="style" />
     <link rel="preload" href="wp-content/themes/10princearthur/assets/js/app-46ab275e9482dc9f40a6.js" as="script" />
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     
@@ -59,17 +61,13 @@
             margin-top: 0 !important;
         }
 
-        @media screen and (max-width: 782px) {
-            html {
-                margin-top: 0 !important;
-            }
-
-            * html body {
-                margin-top: 0 !important;
-            }
-        }
         .landing_img{
-            width: 300px;
+            width: 320px;
+            margin: 0 auto;
+            display: block;
+        }
+        .game_dino_logo{
+            width: 30%;
             margin: 0 auto;
             display: block;
         }
@@ -114,9 +112,28 @@
             font-style: normal !important;
         }
 
-        @media screen and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+            
+            .landing_para{
+                font-size: 16px;
+            }
+            .landing_sub_para{
+                font-size: 14px;
+            }
+            .landing_content_div{
+                width: 75% !important;
+            }
+        }
+        @media only screen and (min-width: 576px) and (max-width: 782px) {
+            html {
+                margin-top: 0 !important;
+            }
+
+            * html body {
+                margin-top: 0 !important;
+            }
             .landing_img{
-                width: 450px;
+                width: 3500px;
                 margin: 0 auto;
                 display: block;
             }
@@ -125,6 +142,30 @@
             }
             .landing_sub_para{
                 font-size: 14px;
+            }
+            .landing_content_div{
+                width: 90% !important;
+            }
+        }
+        
+        @media only screen and (max-width: 576px) {
+            html {
+                margin-top: 0 !important;
+            }
+
+            * html body {
+                margin-top: 0 !important;
+            }
+            .landing_img{
+                width: 270px;
+                margin: 0 auto;
+                display: block;
+            }
+            .landing_para{
+                font-size: 14px;
+            }
+            .landing_sub_para{
+                font-size: 12px;
             }
             .landing_content_div{
                 width: 90% !important;
@@ -449,7 +490,7 @@
                                     <div>
                                         <div class="game_center_bg">
                                             <div class="d-flex h-100 align-items-center">
-                                                <img class="landing_img" src="images/jurassicworldlogo.png" />
+                                                <img class="game_dino_logo" src="images/jurassicworldlogo.png" />
                                             </div>
                                         </div>
                                     </div>               
