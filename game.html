@@ -60,6 +60,10 @@
             height: 100vh;
             z-index: 1000;
         }
+        a:hover{
+            text-decoration: none !important;
+            color: white !important;
+        }
     </style>
     <link rel="stylesheet" type="text/css"
         href="wp-content/themes/10princearthur/assets/css/app-46ab275e9482dc9f40a6.css" />
@@ -158,7 +162,7 @@
 
     <x-application use-router="true" class="app">
 
-        <header class="header js-header">
+        <header class="header js-header is-menu-active">
             <button class="header__btn js-menu-btn">
                 <span></span>
                 <span></span>
@@ -182,26 +186,26 @@
 
                 <div class="cover js-menu-bg">
 
-                    <img src="wp-content/uploads/2020/10/home-32x25.jpg" aria-label="" alt="" title=""
-                        data-hd-src="https://cinderblocinc.com/10princearthur/wp-content/uploads/2020/10/home.jpg"
-                        data-md-src="https://cinderblocinc.com/10princearthur/wp-content/uploads/2020/10/home-1390x1080.jpg"
-                        data-sd-src="https://cinderblocinc.com/10princearthur/wp-content/uploads/2020/10/home-1400x1088.jpg"
+                    <img src="./images/aboutus.jpg" aria-label="" alt="" title=""
+                        data-hd-src="./images/aboutus.jpg"
+                        data-md-src="./images/aboutus.jpg"
+                        data-sd-src="./images/aboutus.jpg"
                         responsive-img style="filter:blur(20px)" class="notMobilePortraitOnly" />
 
-                    <img src="wp-content/uploads/2021/01/mobile-home-21x32.jpg" aria-label="" alt="" title=""
-                        data-hd-src="wp-content/uploads/2021/01/mobile-home.jpg"
-                        data-md-src="wp-content/uploads/2021/01/mobile-home-700x1080.jpg"
-                        data-sd-src="wp-content/uploads/2021/01/mobile-home-907x1400.jpg" responsive-img
+                    <img src="./images/aboutus.jpg" aria-label="" alt="" title=""
+                        data-hd-src="./images/aboutus.jpg"
+                        data-md-src="./images/aboutus.jpg"
+                        data-sd-src="./images/aboutus.jpg" responsive-img
                         style="filter:blur(20px)" class="mobilePortraitOnly" />
 
                 </div>
 
                 <div class="cover js-menu-bg">
 
-                    <img src="wp-content/uploads/2020/10/introduction-32x23.jpg" aria-label="" alt="" title=""
-                        data-hd-src="wp-content/uploads/2020/10/introduction.jpg"
-                        data-md-src="wp-content/uploads/2020/10/introduction-1481x1080.jpg"
-                        data-sd-src="wp-content/uploads/2020/10/introduction-1400x1021.jpg" responsive-img
+                    <img src="./images/landingspage.jpg" aria-label="" alt="" title=""
+                        data-hd-src="./images/landingspage.jpg"
+                        data-md-src="./images/landingspage.jpg"
+                        data-sd-src="./images/landingspage.jpg" responsive-img
                         style="filter:blur(20px)" class="" />
 
 
@@ -209,10 +213,10 @@
 
                 <div class="cover js-menu-bg">
 
-                    <img src="wp-content/uploads/2020/10/gallery-32x25.jpg" aria-label="" alt="" title=""
-                        data-hd-src="wp-content/uploads/2020/10/gallery.jpg"
-                        data-md-src="wp-content/uploads/2020/10/gallery-1404x1080.jpg"
-                        data-sd-src="wp-content/uploads/2020/10/gallery-1400x1077.jpg" responsive-img
+                    <img src="./images/home.jpg" aria-label="" alt="" title=""
+                        data-hd-src="./images/home.jpg"
+                        data-md-src="./images/home.jpg"
+                        data-sd-src="./images/home.jpg" responsive-img
                         style="filter:blur(20px)" class="" />
 
 
@@ -220,10 +224,10 @@
 
                 <div class="cover js-menu-bg">
 
-                    <img src="wp-content/uploads/2020/05/NORTHDRIVE_CAM-DINING_01_RET_SM-32x23.jpg" aria-label="" alt=""
-                        title="" data-hd-src="wp-content/uploads/2020/05/NORTHDRIVE_CAM-DINING_01_RET_SM.jpg"
-                        data-md-src="wp-content/uploads/2020/05/NORTHDRIVE_CAM-DINING_01_RET_SM-1480x1080.jpg"
-                        data-sd-src="wp-content/uploads/2020/05/NORTHDRIVE_CAM-DINING_01_RET_SM-1400x1022.jpg"
+                    <img src="./images/landingspage.jpg" aria-label="" alt=""
+                        title="" data-hd-src="./images/landingspage.jpg"
+                        data-md-src="./images/landingspage.jpg"
+                        data-sd-src="./images/landingspage.jpg"
                         responsive-img style="filter:blur(20px)" class="" />
 
 
@@ -235,7 +239,7 @@
             <app-mouse-scroll desktop-only="false" style="height: 100%;">
                 <nav class="menu__content">
                     <div style="margin: 1rem 0;">
-                        <a class="menu__link" target="_blank" data-menu-link href="./index.html" data-index="0"
+                        <a class="menu__link " target="_blank" data-menu-link href="./index.html" data-index="0"
                             data-img-index="0">
                             <span class="text">About</span>
                         </a>
