@@ -5831,7 +5831,7 @@ app-header-logo svg path {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #161615;
+  background: white;
   transform: scaleX(0) translateZ(0);
   transition: transform 0.9s cubic-bezier(0.43, 0.195, 0.02, 1);
 }
