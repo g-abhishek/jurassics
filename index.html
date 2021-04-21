@@ -107,6 +107,7 @@
         }
         .menu__link{
             font-style: italic !important;
+            font-size: 64px;
         }
         .menu__link:hover{
             font-weight: bold !important;
@@ -128,6 +129,11 @@
             .landing_content_div{
                 width: 90% !important;
             }
+        }
+        .menu{
+            background-image: url('./images/menubg.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
         }
 
         
@@ -165,7 +171,7 @@
             </a>
         </header>
 
-        <app-menu class="menu js-menu">
+        <app-menu class="menu js-menu" >
 
             <button class="menu__closeBtn js-menu-btn">
                 <span></span>
@@ -174,79 +180,32 @@
 
             <div class="menu__bg">
 
-                <div class="cover js-menu-bg">
-
-                    <img src="./images/aboutus.jpg" aria-label="" alt="" title=""
-                        data-hd-src="./images/aboutus.jpg"
-                        data-md-src="./images/aboutus.jpg"
-                        data-sd-src="./images/aboutus.jpg"
-                        responsive-img style="filter:blur(20px)" class="notMobilePortraitOnly" />
-
-                    <img src="./images/aboutus.jpg" aria-label="" alt="" title=""
-                        data-hd-src="./images/aboutus.jpg"
-                        data-md-src="./images/aboutus.jpg"
-                        data-sd-src="./images/aboutus.jpg" responsive-img
-                        style="filter:blur(20px)" class="mobilePortraitOnly" />
-
-                </div>
-
-                <div class="cover js-menu-bg">
-
-                    <img src="./images/landingspage.jpg" aria-label="" alt="" title=""
-                        data-hd-src="./images/landingspage.jpg"
-                        data-md-src="./images/landingspage.jpg"
-                        data-sd-src="./images/landingspage.jpg" responsive-img
-                        style="filter:blur(20px)" class="" />
-
-
-                </div>
-
-                <div class="cover js-menu-bg">
-
-                    <img src="./images/home.jpg" aria-label="" alt="" title=""
-                        data-hd-src="./images/home.jpg"
-                        data-md-src="./images/home.jpg"
-                        data-sd-src="./images/home.jpg" responsive-img
-                        style="filter:blur(20px)" class="" />
-
-
-                </div>
-
-                <div class="cover js-menu-bg">
-
-                    <img src="./images/landingspage.jpg" aria-label="" alt=""
-                        title="" data-hd-src="./images/landingspage.jpg"
-                        data-md-src="./images/landingspage.jpg"
-                        data-sd-src="./images/landingspage.jpg"
-                        responsive-img style="filter:blur(20px)" class="" />
-
-
-                </div>
+                
             </div>
 
             <div class="home__slideshow__content__bg" style="opacity: 1"></div>
 
             <app-mouse-scroll desktop-only="false" style="height: 100%;">
                 <nav class="menu__content">
-                    <div style="margin: 1rem 0;">
+                    <div style="margin: 2rem 0;">
                         <a class="menu__link" data-menu-link href="index.html" data-index="0"
                             data-img-index="0">
                             <span class="text">About</span>
                         </a>
                     </div>
-                    <div style="margin: 1rem 0;">
+                    <div style="margin: 2rem 0;">
                         <a class="menu__link" data-menu-link href="/game.html" data-index="1"
                             data-img-index="1">
                             <span class="text">The Games & <span style="font-weight: 400;">Rules</span></span>
                         </a>
                     </div>
-                    <div style="margin: 1rem 0;">
+                    <div style="margin: 2rem 0;">
                         <a class="menu__link" data-menu-link href="#" data-index="2"
                             data-img-index="2">
                             <span class="text">Agenda</span>
                         </a>
                     </div>
-                    <div style="margin: 1rem 0;">
+                    <div style="margin: 2rem 0;">
                         <a class="menu__link" data-menu-link href="#" data-index="3"
                             data-img-index="3">
                             <span class="text">Shop</span>
