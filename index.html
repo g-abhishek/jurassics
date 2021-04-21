@@ -120,6 +120,7 @@
 </head>
 
 <body>
+    
 
 
     <div class="main-overlay"></div>
@@ -128,10 +129,14 @@
     <div class="preloader">
         <div></div>
     </div>
+    <audio autoplay loop  id="playAudio">
+        <source src="music/music.ogg">
+        <source src="music/music.mp3">
+    </audio>
 
     <x-application use-router="true" class="app">
 
-        <header class="header js-header">
+        <header class="header js-header is-menu-active">
             <button class="header__btn js-menu-btn">
                 <span></span>
                 <span></span>
@@ -495,8 +500,17 @@
 
     </x-application>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script type="text/javascript" async
         src="wp-content/themes/10princearthur/assets/js/app-46ab275e9482dc9f40a6.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            document.getElementById("playAudio").play()
+            $('#playAudio').get(0).autoplay();
+        });
+    </script>
 
 
 </body>
