@@ -108,11 +108,11 @@
         }
         .menu__link{
             font-style: italic !important;
-            font-size: 64px;
+            font-size: 64px !important;
+            font-weight: 400 !important;
         }
-        .menu__link:hover{
-            font-weight: bold !important;
-            font-style: normal !important;
+        .menu_items{
+            margin: 3rem 0 !important;
         }
 
         @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -231,25 +231,25 @@
 
             <app-mouse-scroll desktop-only="false" style="height: 100%;">
                 <nav class="menu__content">
-                    <div style="margin: 2rem 0;">
+                    <div class="menu_items">
                         <a class="menu__link" data-menu-link href="#" data-index="0"
                             data-img-index="0">
                             <span class="text">About</span>
                         </a>
                     </div>
-                    <div style="margin: 2rem 0;">
+                    <div class="menu_items">
                         <a class="menu__link" data-menu-link href="#" data-index="1"
                             data-img-index="1">
-                            <span class="text">The Games & <span style="font-weight: 400;">Rules</span></span>
+                            <span class="text" style="font-weight: bold;">The Games & <span style="font-weight: 400;">Rules</span></span>
                         </a>
                     </div>
-                    <div style="margin: 2rem 0;">
+                    <div class="menu_items">
                         <a class="menu__link" data-menu-link href="#" data-index="2"
                             data-img-index="2">
                             <span class="text">Agenda</span>
                         </a>
                     </div>
-                    <div style="margin: 2rem 0;">
+                    <div class="menu_items">
                         <a class="menu__link" data-menu-link href="#" data-index="3"
                             data-img-index="3">
                             <span class="text">Shop</span>
