@@ -136,6 +136,19 @@
         .three_icons{
             width: 50px;
         }
+        .flag_link_div{
+            display: flex; 
+            align-items: center; 
+            gap: 10px;
+            justify-content: flex-end;
+            margin: 0.5rem 0;
+        }
+        .flag_link_div .h6{
+            margin-bottom: 0px;
+        }
+        .flag_icon{
+            width: 20px;
+        }
 
         @media only screen and (min-width: 768px) and (max-width: 992px) {
             
@@ -611,16 +624,22 @@
                                                         DOWNLOAD PDF
                                                     </app-multiline>
                                                 </a>
-                                                <a target="_blank" href="https://www.youtube.com/watch?v=rvByXpLkl5E" style="text-decoration: underline;">
-                                                    <app-multiline set-delay="false" class="home__slideshow__text" word-class="h6" style="margin: 0.5rem 0; color: red;  text-align: end;" >
-                                                        https://www.youtube.com/watch?v=rvByXpLkl5E
-                                                    </app-multiline>
-                                                </a>
-                                                <a target="_blank" href="https://www.youtube.com/watch?v=rvByXpLkl5E" style="text-decoration: underline;">
-                                                    <app-multiline set-delay="false" class="home__slideshow__text" word-class="h6" style="margin: 0.5rem 0; color: red;  text-align: end;" >
-                                                        https://youtu.be/SiNRdaDM_sU
-                                                    </app-multiline>
-                                                </a>
+                                                <div class="flag_link_div">
+                                                    <a target="_blank" href="https://www.youtube.com/watch?v=rvByXpLkl5E" style="text-decoration: underline;">
+                                                        <app-multiline set-delay="false" class="home__slideshow__text" word-class="h6" style="color: red;  text-align: end;" >
+                                                            https://www.youtube.com/watch?v=rvByXpLkl5E
+                                                        </app-multiline>
+                                                    </a>
+                                                    <img src="./images/flag1.jpeg" class="flag_icon" />
+                                                </div>
+                                                <div class="flag_link_div">
+                                                    <a target="_blank" href="https://www.youtube.com/watch?v=rvByXpLkl5E" style="text-decoration: underline;">
+                                                        <app-multiline set-delay="false" class="home__slideshow__text" word-class="h6" style="color: red;  text-align: end;" >
+                                                            https://youtu.be/SiNRdaDM_sU
+                                                        </app-multiline>
+                                                    </a>
+                                                    <img src="./images/flag2.jpeg" class="flag_icon" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>                
