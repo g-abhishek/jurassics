@@ -5851,15 +5851,14 @@ app-header-logo svg path {
 }
 @media screen and (max-width: 850px) and (orientation: landscape) {
   .menu__content {
-    top: 0%;
-    transform: none;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .menu__content {
-    top: 0%;
-    transform: none;
-    padding-top: 16.64167916041979vh;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 .menu__closeBtn {

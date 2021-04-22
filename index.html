@@ -114,6 +114,9 @@
         .menu_items{
             margin: 3rem 0 !important;
         }
+        .menu__closeBtn:focus{
+            outline: none !important;
+        }
 
         @media only screen and (min-width: 768px) and (max-width: 992px) {
             
@@ -126,8 +129,11 @@
             .landing_content_div{
                 width: 75% !important;
             }
+            .menu__link{
+                font-size: 48px !important;
+            }
         }
-        @media only screen and (min-width: 576px) and (max-width: 782px) {
+        @media only screen and (min-width: 576px) and (max-width: 768px) {
             html {
                 margin-top: 0 !important;
             }
@@ -136,7 +142,7 @@
                 margin-top: 0 !important;
             }
             .landing_img{
-                width: 3500px;
+                width: 350px;
                 margin: 0 auto;
                 display: block;
             }
@@ -149,7 +155,13 @@
             .landing_content_div{
                 width: 90% !important;
             }
+
+            .menu__link{
+                font-size: 38px !important;
+            }
         }
+
+        
         
         @media only screen and (max-width: 576px) {
             html {
@@ -172,6 +184,16 @@
             }
             .landing_content_div{
                 width: 90% !important;
+            }
+        }
+        @media only screen and (min-width: 480px) and (max-width: 576px) {
+            .menu__link{
+                font-size: 36px !important;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .menu__link{
+                font-size: 24px !important;
             }
         }
         .menu{
@@ -263,7 +285,7 @@
         <main role="main" class="main" data-main>
 
 
-            <page-home class="is-intro">
+            <page-editorial class="is-intro">
 
                 <app-slideshow class="home__slideshow">
 
@@ -515,9 +537,9 @@
                             
                                 <div class="container py-5">
                                     <div class="row my-5">
-                                        <div class="col-md-7">
+                                        <div class="col-md-6">
                                         </div>
-                                        <div class="col-md-5">
+                                        <div class="col-md-6">
                                             <div >
                                                 <div style="display: flex; gap: 10px; justify-content: flex-end;">
                                                     <app-multiline set-delay="false" class="home__slideshow__title" word-class="h3" style="color: black">
@@ -623,7 +645,7 @@
 
 
                 </app-slideshow>
-            </page-home>
+            </page-editorial>
 
         </main>
 
