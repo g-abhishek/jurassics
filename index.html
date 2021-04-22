@@ -122,6 +122,21 @@
             outline: none !important;
         }
 
+        .menu{
+            background-image: url('./images/menubg.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .three_icons_div{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 16px;
+        }
+        .three_icons{
+            width: 50px;
+        }
+
         @media only screen and (min-width: 768px) and (max-width: 992px) {
             
             .landing_para{
@@ -167,6 +182,12 @@
 
         
         
+        @media only screen and (max-width: 768px) {
+            .three_icons_div{
+                justify-content: flex-start;
+            }
+        }
+
         @media only screen and (max-width: 576px) {
             html {
                 margin-top: 0 !important;
@@ -200,11 +221,7 @@
                 font-size: 24px !important;
             }
         }
-        .menu{
-            background-image: url('./images/menubg.jpg');
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
+        
 
         
     </style>
@@ -492,38 +509,44 @@
                         <div class="home__slideshow__slide__inner">
 
                             <div class="home__slideshow__content" style="display: flex; align-items: center;padding: 0;">
-                                <!-- <div class="home__slideshow__content__bg"></div> -->                               
-                            
-                                <div class="container py-5">
-                                    <div class="row my-5">
-                                        <div class="col-md-6">
-                                            <div>
-                                                <div >
-                                                    <app-multiline set-delay="false" class="home__slideshow__title" word-class="h3" style="margin-bottom: 5px; color: black">
-                                                        WELCOME TO</app-multiline>
-                                                    <app-multiline set-delay="false" class="home__slideshow__title" word-class="header_italic" style="color: black">
-                                                        JURASSIC WORLD</app-multiline>
-                                                </div>
-                                                <app-multiline set-delay="false" class="home__slideshow__text" word-class="h5" style="margin: 1rem 0; color: black;" >
-                                                    Jurassic World Miniature Game is a compitetive card-based skimish game for 2-4 players . 
-                                                    Take the control of dinosaurs abd humans from the movie franchise!
-                                                </app-multiline>
-            
-                                                <app-multiline set-delay="false" class="home__slideshow__text_2" word-class="h6" style="margin: 1rem 0; color: black;">
-                                                    The main box contains everything you need to stage a narrative campaign of 12 mission depicting the story of the Park Rangers during the events of the Jurassic World movie and beyond. Each Mission is about 30 to 90 minutes to play.
-                                                </app-multiline>
-                                                <app-multiline set-delay="false" class="home__slideshow__text_2" word-class="h6" style="margin: 1rem 0; color: black;">
-                                                    Extend the experience by using the free play mode. Create your own missions and roster  of units using the miniatures and terrain from your collection.
-                                                    The main box can also be expanded with numerous expansions containing new game modes and unique miniatures.
-                                                </app-multiline>
-                                            </div>
-                                        </div>
-                                        <div class="d-none d-md-block d-lg-block d-xl-block col-md-6">
-                                            <img class="corebox" src='./images//MOCKUP_COREBOX_FR.png' style="width: 100%;" />
-                                        </div>
-                                    </div>                
+                                <!-- <div class="home__slideshow__content__bg"></div> -->     
+                                
                                     
-                                </div>
+                                    <div class="container py-5">
+                                        <div class="three_icons_div">
+                                            <img src="images/icon/icon_one.png" class="three_icons" />
+                                            <img src="images/icon/icon_two.png" class="three_icons" />
+                                            <img src="images/icon/icon_three.png" class="three_icons" />
+                                        </div>
+                                        <div class="row my-5">
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <div >
+                                                        <app-multiline set-delay="false" class="home__slideshow__title" word-class="h3" style="margin-bottom: 5px; color: black">
+                                                            WELCOME TO</app-multiline>
+                                                        <app-multiline set-delay="false" class="home__slideshow__title" word-class="header_italic" style="color: black">
+                                                            JURASSIC WORLD</app-multiline>
+                                                    </div>
+                                                    <app-multiline set-delay="false" class="home__slideshow__text" word-class="h5" style="margin: 1rem 0; color: black;" >
+                                                        Jurassic World Miniature Game is a compitetive card-based skimish game for 2-4 players . 
+                                                        Take the control of dinosaurs abd humans from the movie franchise!
+                                                    </app-multiline>
+                
+                                                    <app-multiline set-delay="false" class="home__slideshow__text_2" word-class="h6" style="margin: 1rem 0; color: black;">
+                                                        The main box contains everything you need to stage a narrative campaign of 12 mission depicting the story of the Park Rangers during the events of the Jurassic World movie and beyond. Each Mission is about 30 to 90 minutes to play.
+                                                    </app-multiline>
+                                                    <app-multiline set-delay="false" class="home__slideshow__text_2" word-class="h6" style="margin: 1rem 0; color: black;">
+                                                        Extend the experience by using the free play mode. Create your own missions and roster  of units using the miniatures and terrain from your collection.
+                                                        The main box can also be expanded with numerous expansions containing new game modes and unique miniatures.
+                                                    </app-multiline>
+                                                </div>
+                                            </div>
+                                            <div class="d-none d-md-block d-lg-block d-xl-block col-md-6">
+                                                <img class="corebox" src='./images//MOCKUP_COREBOX_FR.png' style="width: 100%;" />
+                                            </div>
+                                        </div>                
+                                        
+                                    </div>                        
                             </div>
                         </div>
                     </div>
